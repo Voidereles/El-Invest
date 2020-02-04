@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="components__tooltips mt-5">
+            <h2>Tooltips</h2>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                title="Tooltip on topdddd  dddddddddd dddddd ddddd">
+                Tooltip on top
+            </button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+                title="Tooltip on right">
+                Tooltip on right
+            </button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                title="Tooltip on bottom">
+                Tooltip on bottom
+            </button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                title="Tooltip on left">
+                Tooltip on left
+            </button>
+        </div>
+        <div class="components__selectors mt-5">
+            <div class="row mx-0">
+                <label class="switch">
+                    <input class="switch__input" type="checkbox">
+                    <span class="switch__slider"></span>
+                </label>
+
+                <label class="switch ml-5">
+                    <input class="switch__input" type="checkbox" checked>
+                    <span class="switch__slider"></span>
+                </label>
+
+                <label class="checkbox ml-5">
+                    <!-- tutaj tekst -->
+                    <input class="checkbox__input" type="checkbox">
+                    <span class="checkbox__checkmark"></span>
+                </label>
+
+                <label class="checkbox ml-5">
+                    <!-- tutaj tekst -->
+                    <input class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox__checkmark"></span>
+                </label>
+
+                <label class="radio-button ml-5">
+                    <!-- tutaj tekst -->
+                    <input class="radio-button__input" type="radio" name="radio" checked>
+                    <span class="radio-button__checkmark"></span>
+                </label>
+
+                <label class="radio-button ml-5">
+                    <!-- tutaj tekst -->
+                    <input class="radio-button__input" type="radio" name="radio">
+                    <span class="radio-button__checkmark"></span>
+                </label>
+
+
+            </div>
+        </div>
+        <div class="components__forms mt-5">
+            <h2>Forms</h2>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+
+                    <label for="name1">249F5C6F-BD18-4B5E-9ECF-64264193B72F</label>
+                    <div class="input__container input__svg input__svg--user">
+                        <input class="input__inside" type="text" name="input1">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+
+                    <label for="name1">249F5C6F-BD18-4B5E-9ECF-64264193B72F</label>
+                    <div class="input__container">
+                        <input class="input__inside input--no-border" type="text" name="input1">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+
+                    <label for="name1">249F5C6F-BD18-4B5E-9ECF-64264193B72F</label>
+                    <div class="input__container">
+                        <input class="input__inside" type="text" name="input1">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-lg-4">
+                    <label for="state">Single select</label>
+                    <select class="select2-single w-100" name="state">
+                        <option></option>
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <label for="states[]">Multiple select</label>
+                    <select class="select2-multiple w-100" name="states[]" multiple="multiple">
+                        <option></option>
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-lg-4">
+                    <div class="input__shadow big-radius">
+                        <label for="email mb-0"></label>
+                        <input name="email" type="email"
+                            class="input__container input__inside input--rounded input--btn-padding">
+                        <div class="input__container input__svg--submit input__svg--submit--email">
+                            <input type="submit" value="&nbsp" class="btn w-100 h-100 big-radius">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="input__shadow big-radius">
+                        <label for="search mb-0"></label>
+                        <input type="search" name="search" id=""
+                            class="input__container input__inside input--rounded input--cyan input--btn-padding">
+                        <div class="input__container input__svg--submit input__svg--submit--search">
+                            <input type="submit" value="&nbsp" class="btn w-100 h-100 big-radius"
+                                placeholder="Placeholder">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="components__buttons mt-5">
+            <h2>Buttons</h2>
+            <div class="btn btn-primary">Button</div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+
+            <div class="btn btn-outline-primary">Button</div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+
+            <div class="btn btn-primary big-radius">Button</div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+
+            <div class="btn btn-outline-primary big-radius">Button</div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+
+            <div class="btn btn-primary btn-svg btn-svg--message">
+                Button
+
+                <div class="svg-container"></div>
+
+            </div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+
+            <div class="btn btn-primary btn-svg btn-svg--download btn-two-rows">
+                <div class="row h-100">
+                    <div class="col px-0 text-left d-flex flex-column justify-content-center">
+                        <div class="btn-two-rows__first">get it on</div>
+                        <div class="btn-two-rows__second">Appstore</div>
+                    </div>
+                    <div class="col px-0 d-flex flex-column justify-content-center">
+                        <div class="svg-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+
+            <div class="btn btn-primary btn-svg btn-svg--message px-4">
+
+                <div class="svg-container ml-0"></div>
+
+            </div>
+            <div class="d-inline-block mr-2 mb-5"></div>
+        </div>
+        <div class="components__sliders">
+            <h2>Sliders</h2>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <input type="text" class="range-single" name="single-slider" value="" />
+
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <input type="text" class="range-double" name="double-slider" value="" />
+
+                </div>
+            </div>
+
+        </div>
+        <div class="components__misc mt-5">
+            <h2>Misc</h2>
+            <div class="row mx-0">
+                <div class="location"> </div>
+                <div class="mr-5"></div>
+                <button class="play"></button>
+
+                <div class="mr-5"></div>
+                <button class="play play--red"></button>
+
+                <div class="mr-5"></div>
+                <div class="btn btn-primary btn--opacity small-radius">Being the savage's bowsman, that is</div>
+
+                <div class="mr-5"></div>
+                <button class="btn chat">
+                    <div class="online-dot"></div>
+                    Chat with an expert
+                </button>
+            </div>
+        </div>
+        <div class="components__shadows mt-5">
+            <h2>Shadows</h2>
+            <div class="row mx-0">
+                <div class="shadow-box shadow-outline">shadow-outline</div>
+                <div class="shadow-box shadow-button">shadow-button</div>
+                <div class="shadow-box shadow-input">shadow-input</div>
+                <div class="shadow-box shadow-weak">shadow-weak</div>
+                <div class="shadow-box shadow-medium">shadow-medium</div>
+                <div class="shadow-box shadow-strong">shadow-strong</div>
+                <div class="shadow-box shadow-card">shadow-card</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer py-5"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

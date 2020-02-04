@@ -564,6 +564,7 @@ label {
     cursor: pointer;
     transition: 0.2s;
     border: none;
+    margin: 15px;
 
     &:hover {
         background-size: 28px 28px;
@@ -641,6 +642,7 @@ label {
     min-width: 216px;
     position: relative;
     transition: 0.2s;
+    height: 53px;
 
     .online-dot {
         width: 10px;
@@ -661,6 +663,19 @@ label {
         }
 
         transform:scale(1.05);
+    }
+
+    &:focus {
+        outline-color: transparent !important;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: none;
+        -webkit-focus-ring-color: none;
+        box-shadow: $shadow-medium;
+    }
+
+    &:active {
+        transform: scale(1);
     }
 }
 

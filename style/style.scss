@@ -1,4 +1,4 @@
-@import "components.scss";
+@import 'components.scss';
 
 .container-fluid {
     max-width: 1600px;
@@ -7,6 +7,8 @@
 
 /* center the logo */
 .navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: $dark-navy-blue;
     /* center all navbar items */
     justify-content: center;
@@ -36,8 +38,10 @@
             }
         }
 
-        .navbar-toggle-icon {
+        .navbar-toggler-icon {
             background-image: url('../Icons/Cross-black.svg');
+            background-size: 30px 30px;
+            transition: 0.2s;
         }
     }
 
@@ -46,17 +50,29 @@
     }
 
     &-brand-img {
-        max-width: 232px;
+        width: 232px;
+        max-width: 20vw;
     }
 
     &-nav {
         align-items: center;
     }
 
-    &-tel {
+    .nav-link {
+        text-transform: uppercase;
+    }
+
+    .upper-controls-left {
 
         letter-spacing: 2.145px;
 
+    }
+
+    .lower-controls {
+        font-weight: 600;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        letter-spacing: 1.4px;
+        font-size: $text-size-small-2;
     }
 }
 
@@ -66,10 +82,17 @@
     .navbar {
 
         position: relative;
+        padding-top: 0;
+        padding-bottom: 0;
 
         &-expand-lg {
             flex-flow: column nowrap;
             /* in order to display in 2 rows */
+        }
+
+        &-brand {
+
+            padding: 1.8125rem 0;
         }
 
         &-nav.upper-controls {
@@ -77,17 +100,43 @@
             position: absolute;
             right: 1rem;
             top: .5rem;
-            font-size: 85%;
             max-width: calc(50% - 232px/2 - 2rem);
 
             //height and padding same as logo
-            height: 81.2px;
-            padding-top: .3125rem;
-            padding-bottom: .3125rem;
+            height: calc(107px + 2rem);
+            padding-top: 1.8125em;
+            padding-bottom: 1.8125rem;
 
             &-left {
                 left: 1rem;
+
+                .nav-item:first-of-type>.nav-link {
+                    padding-left: 0;
+                }
             }
+
+            &-right {
+                .nav-item:last-of-type>.nav-link {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        &-nav.lower-controls {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            .nav-item:first-of-type>.nav-link {
+                padding-left: 0;
+            }
+
+            .nav-link {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+
+
+            }
+
         }
     }
 }

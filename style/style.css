@@ -2,6 +2,34 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  font-size: 4.4375rem;
+}
+
+h2 {
+  font-size: 3.875rem;
+}
+
+h3 {
+  font-size: 2.6875rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.625rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+.font-extrasmall-2 {
+  font-size: 0.6875rem;
+}
+
 label {
   font-size: 0.75rem;
 }
@@ -367,6 +395,61 @@ label {
   border-color: transparent;
 }
 
+.btn-primary--dark {
+  background-color: #1d2359;
+  border-color: #1d2359;
+}
+
+.btn-primary--dark:hover {
+  border-color: #0a0c1f;
+  background-color: #0a0c1f;
+}
+
+.btn-primary--dark:not(:disabled):not(.disabled).active, .btn-primary--dark:not(:disabled):not(.disabled):active,
+.show > .btn-primary--dark.dropdown-toggle {
+  background-color: #303a93;
+  border-color: transparent;
+}
+
+.btn-primary--soft-red {
+  background-color: #FB7C6E;
+  border-color: #FB7C6E;
+}
+
+.btn-primary--soft-red:hover {
+  border-color: #f93924;
+  background-color: #f93924;
+}
+
+.btn-primary--soft-red:not(:disabled):not(.disabled).active, .btn-primary--soft-red:not(:disabled):not(.disabled):active,
+.show > .btn-primary--soft-red.dropdown-toggle {
+  background-color: #fdbfb8;
+  border-color: transparent;
+}
+
+.btn--arrow {
+  position: relative;
+  text-align: left !important;
+  padding-left: 29px;
+  padding-right: calc(38px + 2rem + 9px);
+}
+
+.btn--arrow::after {
+  content: '';
+  width: 9px;
+  height: 6px;
+  background-color: transparent;
+  background-image: url("icons/arrow-right.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: calc(50% + 1px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 2rem;
+}
+
 .btn--opacity {
   mix-blend-mode: screen;
   color: rgba(255, 255, 255, 0.7);
@@ -668,5 +751,89 @@ label {
 .shadow-card {
   -webkit-box-shadow: 0px 10px 32px rgba(10, 31, 68, 0.07);
           box-shadow: 0px 10px 32px rgba(10, 31, 68, 0.07);
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+/* center the logo */
+.navbar {
+  color: #1d2359;
+  /* center all navbar items */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 1rem;
+  top: .5rem;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline-color: transparent !important;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -webkit-focus-ring-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("../Icons/hamburger.svg");
+}
+
+.navbar-toggler .navbar-toggle-icon {
+  background-image: url("../Icons/Cross-black.svg");
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.navbar-brand-img {
+  max-width: 232px;
+}
+
+.navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-tel {
+  letter-spacing: 2.145px;
+}
+
+/* since it's expanding at lg */
+@media (min-width: 992px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar-expand-lg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    /* in order to display in 2 rows */
+  }
+  .navbar-nav.upper-controls {
+    /* same logic as the navbar-toggler above */
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    font-size: 85%;
+    max-width: calc(50% - 232px/2 - 2rem);
+    height: 81.2px;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+  }
+  .navbar-nav.upper-controls-left {
+    left: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

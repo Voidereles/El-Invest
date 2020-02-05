@@ -1,0 +1,93 @@
+@import "components.scss";
+
+.container-fluid {
+    max-width: 1600px;
+
+}
+
+/* center the logo */
+.navbar {
+    color: $dark-navy-blue;
+    /* center all navbar items */
+    justify-content: center;
+
+    &-toggler {
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        padding: 0;
+
+        &:focus {
+            outline-color: transparent !important;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-appearance: none;
+            -webkit-focus-ring-color: none;
+            box-shadow: none;
+        }
+
+        &.collapsed {
+
+            .navbar-toggler-icon {
+
+                background-image: url('../Icons/hamburger.svg');
+
+
+            }
+        }
+
+        .navbar-toggle-icon {
+            background-image: url('../Icons/Cross-black.svg');
+        }
+    }
+
+    &-brand {
+        margin-right: 0;
+    }
+
+    &-brand-img {
+        max-width: 232px;
+    }
+
+    &-nav {
+        align-items: center;
+    }
+
+    &-tel {
+
+        letter-spacing: 2.145px;
+
+    }
+}
+
+/* since it's expanding at lg */
+@media(min-width: 992px) {
+
+    .navbar {
+
+        position: relative;
+
+        &-expand-lg {
+            flex-flow: column nowrap;
+            /* in order to display in 2 rows */
+        }
+
+        &-nav.upper-controls {
+            /* same logic as the navbar-toggler above */
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            font-size: 85%;
+            max-width: calc(50% - 232px/2 - 2rem);
+
+            //height and padding same as logo
+            height: 81.2px;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+
+            &-left {
+                left: 1rem;
+            }
+        }
+    }
+}

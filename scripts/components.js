@@ -1,3 +1,4 @@
+new WOW().init();
 
 $(document).ready(function () {
     $('.select2-single').select2({

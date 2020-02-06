@@ -46,6 +46,10 @@ label {
   border-radius: 5px !important;
 }
 
+.bg-soft-red {
+  background-color: #FB7C6E;
+}
+
 .tooltip-inner {
   font-size: 0.75rem;
   font-family: 'Roboto', sans-serif;
@@ -295,7 +299,7 @@ label {
 .input__svg--submit {
   position: absolute;
   display: inline-block;
-  right: 15px;
+  right: 0;
   bottom: 0;
   height: 60px;
   width: 79px;
@@ -427,7 +431,7 @@ label {
 
 .btn-primary--soft-red:not(:disabled):not(.disabled).active, .btn-primary--soft-red:not(:disabled):not(.disabled):active,
 .show > .btn-primary--soft-red.dropdown-toggle {
-  background-color: #fdbfb8;
+  background-color: #fc9287;
   border-color: transparent;
 }
 
@@ -662,16 +666,20 @@ label {
 }
 
 .chat {
+  background-color: white;
   color: #333333;
   letter-spacing: 0.15px;
   -webkit-box-shadow: 0px 20px 30px rgba(10, 31, 68, 0.1);
-          box-shadow: 0px 20px 30px rgba(10, 31, 68, 0.1);
+  box-shadow: 0px 20px 30px rgba(10, 31, 68, 0.1);
   border-radius: 100px;
   min-width: 216px;
-  position: relative;
+  bottom: -85px;
+  position: absolute;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   height: 53px;
+  z-index: 5;
+  right: 15px;
 }
 
 .chat .online-dot {

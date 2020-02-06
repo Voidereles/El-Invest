@@ -21,8 +21,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
-    <link rel="stylesheet" href="style/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="style/style.css">
 
 </head>
@@ -32,8 +31,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <header class="header">
-        <div class="container-fluid">
+    <header id="header" class="header">
+        <div class="container-fluid position-relative">
             <nav class="navbar navbar-expand-lg">
                 <a href="#" class="navbar-brand">
                     <img class="navbar-brand-img" src="images/logo.svg" alt="printyu business">
@@ -62,14 +61,48 @@
                     </ul>
                     <ul class="navbar-nav upper-controls upper-controls-right">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Country</a>
+                            <a class="nav-link" href="#">
+                                <svg class="mr-1" width="17" height="22" viewBox="0 0 17 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.75 6.875H1.375C0.614625 6.875 0 7.491 0 8.25V16.5124C0 19.5374 2.46125 22 5.48763 22H10.9986C14.0319 22 16.5 19.5319 16.5 16.4986V8.25C16.5 7.491 15.8854 6.875 15.125 6.875H13.75V5.5C13.75 2.46675 11.2832 0 8.25 0C5.21675 0 2.75 2.46675 2.75 5.5V6.875ZM2.75 9.625V16.5124C2.75 18.0221 3.97925 19.25 5.48763 19.25H10.9986C12.5166 19.25 13.75 18.0166 13.75 16.4986V9.625H2.75ZM5.5 6.875H11V5.5C11 3.98337 9.76663 2.75 8.25 2.75C6.73338 2.75 5.5 3.98337 5.5 5.5V6.875ZM8.24987 14.4282C7.13612 14.4282 6.02512 14.1738 5.01037 13.6678L4.88525 13.6045C4.206 13.2649 3.92962 12.4399 4.26925 11.7607C4.61162 11.0814 5.43662 10.8064 6.1145 11.1447L6.23962 11.2079C7.49912 11.8377 9.00062 11.8377 10.2601 11.2079L10.3852 11.1447C11.0659 10.8064 11.8881 11.0814 12.2305 11.7607C12.5701 12.4399 12.2937 13.2649 11.6145 13.6045L11.4894 13.6678C10.4746 14.1738 9.36362 14.4282 8.24987 14.4282Z"
+                                        fill="#3C3D48" />
+                                </svg>
+
+                                mitteilungen
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Language</a>
+                            <a class="nav-link" href="#">
+                                kontakt
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sign up | Sign in</a>
+                            <a class="nav-link" href="#">
+                                <svg class="mr-1" width="17" height="22" viewBox="0 0 17 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.24966 2.75C6.73304 2.75 5.49966 4.29275 5.49966 6.1875C5.49966 8.08225 6.73304 9.625 8.24966 9.625C9.76629 9.625 10.9997 8.08225 10.9997 6.1875C10.9997 4.29275 9.76629 2.75 8.24966 2.75ZM8.24966 12.375C5.21641 12.375 2.74966 9.59888 2.74966 6.1875C2.74966 2.77612 5.21641 0 8.24966 0C11.2829 0 13.7497 2.77612 13.7497 6.1875C13.7497 9.59888 11.2829 12.375 8.24966 12.375ZM12.6225 22.0002H3.87337C1.73662 22.0002 0 20.1495 0 17.8752C0 16.7821 0.235125 15.6849 0.680625 14.7017L1.37225 13.181C1.68575 12.4894 2.5025 12.1855 3.19275 12.4976C3.88438 12.8125 4.18962 13.6279 3.87613 14.3195L3.18587 15.8402C2.89987 16.4672 2.75 17.1712 2.75 17.8752C2.75 18.6342 3.25462 19.2502 3.87337 19.2502H12.6225C13.244 19.2502 13.75 18.6315 13.75 17.8725C13.75 17.1699 13.5988 16.4686 13.3155 15.843L12.6225 14.3195C12.309 13.6279 12.6156 12.8125 13.3073 12.4976C14.0003 12.1855 14.8142 12.4894 15.1277 13.181L15.8194 14.7059C16.2635 15.6849 16.5 16.7794 16.5 17.8725C16.5 20.1481 14.7606 22.0002 12.6225 22.0002Z"
+                                        fill="#3C3D48" />
+                                </svg>
+                                kundenkonto
+                            </a>
                         </li>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="basket">
+                                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.9012 2.92637H22.1255C22.0301 2.93328 21.8379 3.0646 21.8006 3.15031L17.9314 14.028C17.9245 14.046 17.9107 14.0585 17.9038 14.0764C17.883 14.1276 17.8526 14.1704 17.825 14.2188C17.7697 14.317 17.7088 14.4082 17.6328 14.4897C17.5941 14.5312 17.554 14.5658 17.5098 14.6031C17.4227 14.6764 17.3273 14.7358 17.2236 14.7856C17.1766 14.8091 17.1324 14.8353 17.0813 14.8533C16.9209 14.9114 16.7536 14.9501 16.5781 14.9501C16.5781 14.9501 16.5781 14.9501 16.5767 14.9501H4.68984C4.08575 14.9501 3.54801 14.5893 3.34481 14.0488L0.136368 5.47957C-0.019838 5.06348 0.046515 4.60178 0.314691 4.24098C0.581486 3.88019 1.01693 3.66593 1.4814 3.66593H18.6032L19.0967 2.27666C19.5156 1.0989 20.8178 0.211426 22.1255 0.211426H24.9012C25.6905 0.211426 26.3292 0.818279 26.3292 1.5689C26.3292 2.31951 25.6905 2.92637 24.9012 2.92637ZM3.50511 6.38057L5.69752 12.2348H15.5551L17.6369 6.38057H3.50511ZM5.17365 16.2022C6.54632 16.2022 7.66465 17.2638 7.66465 18.5701C7.66465 19.8765 6.54632 20.9381 5.17365 20.9381C3.79959 20.9381 2.68265 19.8765 2.68265 18.5701C2.68265 17.2638 3.79959 16.2022 5.17365 16.2022ZM17.0164 16.2022C18.3905 16.2022 19.5088 17.2638 19.5088 18.5701C19.5088 19.8765 18.3905 20.9381 17.0164 20.9381C15.6424 20.9381 14.5268 19.8765 14.5268 18.5701C14.5268 17.2638 15.6424 16.2022 17.0164 16.2022Z"
+                                            fill="#595959" />
+                                    </svg>
+                                    <span class="basket__number">
+                                        1
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
                     </ul>
                     <ul class="navbar-nav lower-controls w-100">
                         <li class="nav-item dropdown">
@@ -98,11 +131,240 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">unternehmen</a>
                         </li>
+                        <li class="nav-item position-relative ml-lg-auto">
+                            <div class="input__shadow big-radius">
+
+                                <input type="search" name="search" id=""
+                                    class="input__container input__inside input--rounded input--cyan input--btn-padding">
+                                <div class="input__container input__svg--submit input__svg--submit--search">
+                                    <input type="submit" value="&nbsp" class="btn w-100 h-100 big-radius"
+                                        placeholder="Placeholder">
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
+
+
+            <button class="btn chat wow slideInRight" data-wow-delay="2s">
+                <div class="online-dot"></div>
+                Chat with an expert
+            </button>
         </div>
+
     </header>
+
+    <main class="main">
+        <div class="container-fluid">
+            <div class="row mx-xl-0">
+                <div class="owl-carousel owl-hero-1">
+                    <div class="owl-hero__item">
+                        <img class="owl-hero__img" src="images/tshirt-woman.png" alt="printyu woman with jeans">
+                        <div class="owl-hero__text">
+                            <div class="owl-hero__promo-type">New Collection</div>
+                            <div class="owl-hero__item-heading">Kleidung & Textilien</div>
+                            <a class="btn btn-danger btn-primary--soft-red btn--arrow owl-hero__btn" href="#">Shop
+                                now</a>
+                        </div>
+                    </div>
+                    <div class="owl-hero__item">
+                        <img class="owl-hero__img" src="images/man-beard.png" alt="printyu man with beard">
+                        <div class="owl-hero__text">
+                            <div class="owl-hero__promo-type">New Collection</div>
+                            <div class="owl-hero__item-heading">Kleidung & Textilien</div>
+                            <a class="btn btn-danger btn-primary--soft-red btn--arrow owl-hero__btn" href="#">Shop
+                                now</a>
+                        </div>
+                    </div>
+                    <div class="owl-hero__item">
+                        <img class="owl-hero__img" src="images/woman-jeans.png" alt="printyu woman with jeans">
+                        <div class="owl-hero__text">
+                            <div class="owl-hero__promo-type">New Collection</div>
+                            <div class="owl-hero__item-heading">Kleidung & Textilien</div>
+                            <a class="btn btn-danger btn-primary--soft-red btn--arrow owl-hero__btn" href="#">Shop
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-hero-2">
+                    <div class="owl-hero__item" data-merge="2">
+                        <img class="owl-hero__img" src="images/printyu-roller.png" alt="printyu roller">
+                        <div class="owl-hero__text">
+                            <div class="owl-hero__promo-type">New Collection</div>
+                            <div class="owl-hero__item-heading">Kleidung & Textilien</div>
+                            <a class="btn btn-danger btn-primary--soft-red btn--arrow owl-hero__btn" href="#">Shop
+                                now</a>
+                        </div>
+                    </div>
+                    <div class="owl-hero__item">
+                        <img class="owl-hero__img" src="images/woman-blonde.png" alt="printyu blonde">
+                        <div class="owl-hero__text">
+                            <div class="owl-hero__promo-type">New Collection</div>
+                            <div class="owl-hero__item-heading">Kleidung & Textilien</div>
+                            <a class="btn btn-danger btn-primary--soft-red btn--arrow owl-hero__btn" href="#">Shop
+                                now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <section class="on-sale">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 wow fadeInLeft" data-wow-delay="0.9s">
+
+                        <h5>On sale</h5>
+                        <h3>Top-produkte</h3>
+                        <p>Banner nach Maß
+
+                            Ziehen Sie mit tollen Bannern alle
+                            Aufmerksamkeit auf sich!
+                            Bestellen Sie ab:</p>
+
+
+                        <hr>
+
+                        <p>Our entire Winter collection.</p>
+
+                        <div class="card on-sale__accordion-card">
+                            <div class="card-header on-sale__accordion-card-header
+                                        on-sale__accordion-card-header--inner" id="NewIn">
+                                <button class="btn btn-link on-sale__accordion-btn collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseNewIn" aria-expanded="true"
+                                    aria-controls="collapseNewIn">
+                                    New In
+                                </button>
+                            </div>
+                            <div id="collapseNewIn" class="collapse" aria-labelledby="NewIn">
+                                <div class="card-body on-sale__accordion-card-body">
+                                    <ul class="on-sale__accordion-card-list">
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">Crop Tops</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card on-sale__accordion-card">
+                            <div class="card-header on-sale__accordion-card-header
+                                        on-sale__accordion-card-header--inner" id="AlleProdukte">
+                                <button class="btn btn-link on-sale__accordion-btn" type="button" data-toggle="collapse"
+                                    data-target="#collapseAlleProdukte" aria-expanded="true"
+                                    aria-controls="collapseAlleProdukte">
+                                    Alle Produkte
+                                </button>
+                            </div>
+                            <div id="collapseAlleProdukte" class="collapse show" aria-labelledby="AlleProdukte">
+                                <div class="card-body on-sale__accordion-card-body">
+                                    <ul class="on-sale__accordion-card-list">
+                                        <li><a href="#">on-sale</a></li>
+                                        <li><a href="#">Allgemeine Information</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="special-offer wow fadeInRightBig">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 p-5 special-offer__left">
+                            <h4>Special Offer</h4>
+                            <h2 class="special-offer__join-us">Join Us</h2>
+                            <hr>
+                            <p>Wir von Helloprint glauben fest an die Zusammenarbeit mit lokalen Partnern. Darum bieten
+                                wir
+                                Ihnen an, unseren Webshop als Duplikat mit Ihrem eigenen Branding als sogenannten White
+                                Lable Shop zu führen. Sie kümmern sich dabei um's Verkaufen und den Kundendienst, wir
+                                kümmern uns um alles andere!</p>
+                            <form class="mt-5" action="">
+
+                                <div class="input__container">
+                                    <input class="input__inside" type="text" name="Name" placeholder="Name">
+                                </div>
+
+                                <div class="input__container mt-2">
+                                    <input class="input__inside" type="email" name="input1" placeholder="e-mail">
+                                </div>
+
+                                <div class="input__container">
+                                    <input type="submit" value="sign up now" class="btn w-100 h-100 big-radius"
+                                        placeholder="Placeholder">
+                                </div>
+
+                                <label class="checkbox ml-5">
+                                    By subscribing you agree to our Terms & Conditions and Privacy & Cookies Policy.
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__checkmark"></span>
+
+                                </label>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-7 p-5 special-offer__right">
+                            <h3>EINFACH VERANLASST, OHNE MÜHE</h3>
+                            <hr>
+                            <p>Wenn es ums Drucken geht, können Sie darauf vertrauen, dass wir genau wissen, was wir
+                                tun. Bei Helloprint erhalten Sie Spitzenqualität, günstige Preise und einen Top-Service
+                                für all Ihre Druckanforderungen – garantiert! Überzeugen Sie sich selbst: Sehen Sie, was
+                                unsere Kunden bei Trustedshops zu sagen haben.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="magazine">
+                <div class="row">
+                    <div class="col-12 col-lg-4 wow fadeInLeft py-5">
+                        <h2>Unsere Nachrichten</h2>
+                        <hr>
+                        <p>Schnell, einfach und effizient - das ist Helloprint! Ob Berlin, Hamburg, Frankfurt oder
+                            München:
+                            In ganz Deutschland setzen Unternehmen auf unsere Internet-Druckerei. Wir bieten effektive
+                            Lösungen und hochwertigen Online-Druck für jeden Geldbeutel.</p>
+
+
+                        <div class="btn btn-primary btn-primary--soft-red btn--arrow">ENTDECKEN SIE ALLE ARTIKEL</div>
+                    </div>
+                    <div class="col-12 offset-lg-1 col-lg-7 wow fadeInRight">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 d-none d-lg-block">
+                                <img class="magazine__img" src="images/printyu-roller-small.png" alt="printyu roller">
+
+                            </div>
+                            <div class="col-12 col-lg-6 p-5">
+
+                                <h3 class="magazine__h3">ONLINE DRUCKEN WEITERGEDACHT</h3>
+                                <hr>
+                                <p>
+                                    Wir wissen: Wer einen Online-Druckservice sucht, hat hohe Ansprüche. Dies
+                                    umfasst
+                                    die Güte des Drucks ebenso wie den Bestellvorgang und die Lieferung. Daher
+                                    arbeiten
+                                    wir stetig daran, all unsere Prozesse so kundenorientiert wie möglich zu
+                                    gestalten.
+                                    Wir kooperieren mit etablierten Print-Shops, für die Qualität an erster Stelle
+                                    steht. In Deutschland ansässige Unternehmen, Wiederverkäufer und Grafikdesigner
+                                    profitieren gleichermaßen von unserem professionellen Online-Druck.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+
+    </main>
 
 
 
@@ -118,6 +380,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
         integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 

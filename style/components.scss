@@ -101,6 +101,10 @@ label {
     border-radius: $small-radius !important;
 }
 
+.bg-soft-red {
+    background-color: $soft-red;
+}
+
 //bootstrap tooltip
 .tooltip {
     &-inner {
@@ -328,7 +332,7 @@ label {
         &--submit {
             position: absolute;
             display: inline-block;
-            right: 15px;
+            right: 0;
             bottom: 0;
             height: 60px;
             width: 79px;
@@ -473,7 +477,7 @@ label {
         &:not(:disabled):not(.disabled).active,
         &:not(:disabled):not(.disabled):active,
         .show>&.dropdown-toggle {
-            background-color: lighten($color: $soft-red, $amount: 15%);
+            background-color: lighten($color: $soft-red, $amount: 5%);
             border-color: transparent;
         }
     }
@@ -734,14 +738,20 @@ label {
 }
 
 .chat {
-    color: $black;
+    background-color: white;
+    color: #333333;
     letter-spacing: 0.15px;
-    box-shadow: $shadow-medium;
-    border-radius: $big-radius;
+    -webkit-box-shadow: 0px 20px 30px rgba(10, 31, 68, 0.1);
+    box-shadow: 0px 20px 30px rgba(10, 31, 68, 0.1);
+    border-radius: 100px;
     min-width: 216px;
-    position: relative;
+    bottom: -85px;
+    position: absolute;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     height: 53px;
+    z-index: 5;
+    right: 15px;
 
     .online-dot {
         width: 10px;

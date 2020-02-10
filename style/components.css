@@ -385,6 +385,14 @@ label {
 .show > .btn-outline-primary.dropdown-toggle {
   background-color: #3569e1;
   border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary:focus, .btn-outline-primary:focus {
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
 }
 
 .btn-outline-primary {
@@ -763,5 +771,12 @@ label {
 .shadow-card {
   -webkit-box-shadow: 0px 10px 32px rgba(10, 31, 68, 0.07);
           box-shadow: 0px 10px 32px rgba(10, 31, 68, 0.07);
+}
+
+.white-line {
+  height: 4px;
+  width: 240px;
+  max-width: 100%;
+  background-color: white;
 }
 /*# sourceMappingURL=components.css.map */

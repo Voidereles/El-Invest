@@ -1,6 +1,8 @@
 @import 'components.scss';
 
-body {
+
+body,
+html {
     overflow-x: hidden;
     color: #2C2E3F;
 }
@@ -64,7 +66,7 @@ footer {
 
         .navbar-toggler-icon {
             background-image: url('../Icons/Cross-black.svg');
-            background-size: 30px 30px;
+            background-size: contain;
             transition: 0.2s;
         }
     }
@@ -324,6 +326,51 @@ footer {
             display: block;
 
         }
+
+        .input__inside {
+            background-color: #E6604D;
+            color: white;
+            border-color: transparent;
+            border-radius: 0;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            &:focus {
+                border-color: white;
+                outline-color: transparent !important;
+                outline: none;
+                -webkit-tap-highlight-color: transparent;
+                -webkit-appearance: none;
+                -webkit-focus-ring-color: none;
+                box-shadow: none;
+            }
+
+        }
+
+        .btn-primary--dark {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: $text-size-small;
+        }
+
+        .checkbox {
+            font-size: $text-size-small-2;
+            line-height: 28px;
+        }
+
+        .checkbox__checkmark {
+            border-radius: 50%;
+            background-color: white;
+            top: 3px;
+
+        }
+
+        .checkbox__input:checked~.checkbox__checkmark {
+            background-color: $soft-red;
+        }
     }
 
     &__right {
@@ -398,7 +445,6 @@ footer {
 
     .owl-item.center &__item {
         padding: 0;
-
 
         &-heading {
             position: absolute;
@@ -514,12 +560,33 @@ footer {
 
 @media(max-width:992px) {
 
+    html,
+    body {
+        font-size: 14px;
+    }
+
     .main {
         margin-top: 45px;
     }
 
     .container-fluid {
         max-width: 100%;
+    }
+
+    .owl-hero {
+        &__text {
+            left: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+        }
+    }
+
+    .on-sale,
+    .special-offer,
+    .magazine,
+    .lookbook {
+        margin-top: 1rem;
     }
 
     .special-offer {
@@ -539,6 +606,11 @@ footer {
         & .owl-carousel &__item img {
             width: calc(100% + 2px);
         }
+    }
+
+    .footer__heading {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
     }
 
 }

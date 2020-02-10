@@ -385,6 +385,14 @@ label {
 .show > .btn-outline-primary.dropdown-toggle {
   background-color: #3569e1;
   border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary:focus, .btn-outline-primary:focus {
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
 }
 
 .btn-outline-primary {
@@ -765,7 +773,15 @@ label {
           box-shadow: 0px 10px 32px rgba(10, 31, 68, 0.07);
 }
 
-body {
+.white-line {
+  height: 4px;
+  width: 240px;
+  max-width: 100%;
+  background-color: white;
+}
+
+body,
+html {
   overflow-x: hidden;
   color: #2C2E3F;
 }
@@ -828,7 +844,7 @@ footer {
 
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("../Icons/Cross-black.svg");
-  background-size: 30px 30px;
+  background-size: contain;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -1082,6 +1098,62 @@ footer {
   display: block;
 }
 
+.special-offer__left .input__inside {
+  background-color: #E6604D;
+  color: white;
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.special-offer__left .input__inside::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.special-offer__left .input__inside:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.special-offer__left .input__inside::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.special-offer__left .input__inside::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.special-offer__left .input__inside:focus {
+  border-color: white;
+  outline-color: transparent !important;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -webkit-focus-ring-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.special-offer__left .btn-primary--dark {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.special-offer__left .checkbox {
+  font-size: 0.875rem;
+  line-height: 28px;
+}
+
+.special-offer__left .checkbox__checkmark {
+  border-radius: 50%;
+  background-color: white;
+  top: 3px;
+}
+
+.special-offer__left .checkbox__input:checked ~ .checkbox__checkmark {
+  background-color: #FB7C6E;
+}
+
 .special-offer__right {
   background-color: #ECECEE;
 }
@@ -1266,11 +1338,27 @@ footer {
 }
 
 @media (max-width: 992px) {
+  html,
+  body {
+    font-size: 14px;
+  }
   .main {
     margin-top: 45px;
   }
   .container-fluid {
     max-width: 100%;
+  }
+  .owl-hero__text {
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+  }
+  .on-sale,
+  .special-offer,
+  .magazine,
+  .lookbook {
+    margin-top: 1rem;
   }
   .special-offer__right::after, .special-offer__left::after {
     left: 0;
@@ -1279,6 +1367,10 @@ footer {
   }
   .lookbook .owl-carousel .lookbook__item img {
     width: calc(100% + 2px);
+  }
+  .footer__heading {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
   }
 }
 

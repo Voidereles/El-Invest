@@ -31,7 +31,7 @@ $('.owl-hero-2').owlCarousel({
     merge: true,
     responsiveClass: true,
     lazyLoad: true,
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 3500,
     autoplayHoverPause: true,
     responsiveClass: true,

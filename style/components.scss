@@ -427,6 +427,12 @@ label {
         .show>&.dropdown-toggle {
             background-color: lighten($color: $dark-blue, $amount: 15%);
             border-color: transparent;
+            box-shadow: 0 0 0 0.2rem transparent;
+        }
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: 0 0 0 0.2rem transparent;
         }
     }
 
@@ -823,4 +829,12 @@ label {
     &-card {
         box-shadow: $shadow-card;
     }
+}
+
+.white-line {
+
+    height: 4px;
+    width: 240px;
+    max-width: 100%;
+    background-color: white;
 }

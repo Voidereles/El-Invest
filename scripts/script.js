@@ -55,23 +55,24 @@ $('.owl-hero-2').owlCarousel({
 $('.lookbook-carousel').owlCarousel({
     items: 3,
     loop: true,
-    margin: 15,
+    margin: 0,
     responsiveClass: true,
     lazyLoad: true,
     center: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3500,
     autoplayHoverPause: true,
     responsiveClass: true,
+    dots: true,
     responsive: {
         0: {
             items: 1
         },
         678: {
-            items: 2,
+            items: 2
         },
         1200: {
-            items: 3,
+            items: 3
         }
     }
 })

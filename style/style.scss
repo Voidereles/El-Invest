@@ -2,6 +2,15 @@
 
 body {
     overflow-x: hidden;
+    color: #2C2E3F;
+}
+
+body,
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 100%;
 }
 
 .container-fluid {
@@ -318,6 +327,8 @@ body {
     }
 
     &__right {
+        background-color: #ECECEE;
+
         &::after {
             content: '';
             background-color: #ECECEE;
@@ -354,16 +365,168 @@ body {
     }
 }
 
+.lookbook {
+    margin-top: 152px;
+
+    .owl-stage {
+        display: flex !important;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: initial;
+    }
+
+
+    &__item {
+        height: 100%;
+        padding: 2rem 1.5rem;
+        transition: width 0.2s,
+            height 0.2s,
+            padding 0.2s;
+        position: relative;
+
+        &-heading {
+            opacity: 0;
+            transition: 0.2s;
+            visibility: hidden;
+        }
+
+    }
+
+    .owl-item.center &__item {
+        padding: 0;
+
+
+        &-heading {
+            position: absolute;
+            max-width: 512px;
+            top: -1px;
+            right: -1px;
+            padding: 24px 44px;
+            background: white;
+            font-weight: bold;
+            opacity: 1;
+            visibility: visible;
+
+            &-h4,
+            &-h6 {
+                font-weight: bold;
+            }
+
+            &-h6 {
+                color: $soft-red;
+            }
+        }
+    }
+
+    .owl-dots {
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+
+        .owl-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #D8D8D8;
+            border-radius: 50%;
+            margin-left: 12px;
+            margin-right: 12px;
+
+            &.active {
+                background-color: $soft-red;
+                width: 12px;
+                height: 12px;
+                margin: 12px;
+            }
+        }
+
+    }
+}
+
+.footer {
+    margin-top: 108px;
+
+    &__heading {
+        font-size: $text-size-medium-2;
+        text-transform: uppercase;
+        letter-spacing: -0.103636px;
+        font-weight: 600;
+        margin-bottom: 67px;
+    }
+
+    &__list {
+        padding-left: 0;
+        color: rgba(44, 46, 63, 0.697549);
+        list-style-type: none;
+        line-height: 40px;
+
+        li a:hover {
+            color: #2C2E3F;
+        }
+    }
+
+    &__newsletter {
+        max-width: 531px;
+
+        .footer__heading {
+            max-width: 440px;
+            text-transform: none;
+        }
+
+        .input--no-border {
+            border-bottom-color: lighten($color: $soft-red, $amount: 5%);
+
+            &:focus {
+                border-bottom-color: darken($color: $soft-red, $amount: 15%);
+            }
+        }
+    }
+
+    &__copyright,
+    &__social {
+        line-height: 96px;
+        height: 96px;
+        color: rgba(44, 46, 63, 0.697549);
+
+        a:hover {
+            text-decoration: none;
+            color: inherit;
+
+            .footer__social-icon {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__social-icon {
+        opacity: 0.5;
+        transition: 0.2s;
+
+
+    }
+}
+
 @media(max-width:992px) {
 
     .main {
         margin-top: 45px;
     }
 
+    .container-fluid {
+        max-width: 100%;
+    }
+
     .special-offer {
 
         &__right,
         &__left {
+
             &::after {
                 left: 0;
                 right: 0;
@@ -372,7 +535,15 @@ body {
         }
     }
 
+    .lookbook {
+        & .owl-carousel &__item img {
+            width: calc(100% + 2px);
+        }
+    }
+
 }
+
+
 
 /* since it's expanding at lg */
 @media(min-width: 992px) {

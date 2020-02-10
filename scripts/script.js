@@ -52,6 +52,30 @@ $('.owl-hero-2').owlCarousel({
     }
 })
 
+$('.lookbook-carousel').owlCarousel({
+    items: 3,
+    loop: true,
+    margin: 15,
+    responsiveClass: true,
+    lazyLoad: true,
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplayHoverPause: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        678: {
+            items: 2,
+        },
+        1200: {
+            items: 3,
+        }
+    }
+})
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;

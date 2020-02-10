@@ -1107,6 +1107,11 @@ body {
   .main {
     margin-top: 45px;
   }
+  .special-offer__right::after, .special-offer__left::after {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
 }
 
 /* since it's expanding at lg */

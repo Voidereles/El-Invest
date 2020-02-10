@@ -295,7 +295,6 @@ body {
     }
 }
 
-
 .special-offer {
     margin-top: 180px;
 
@@ -359,6 +358,18 @@ body {
 
     .main {
         margin-top: 45px;
+    }
+
+    .special-offer {
+
+        &__right,
+        &__left {
+            &::after {
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
     }
 
 }
